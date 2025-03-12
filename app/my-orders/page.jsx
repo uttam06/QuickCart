@@ -10,7 +10,7 @@ import axios from "axios";
 
 const MyOrders = () => {
 
-  const { currency } = useAppContext();
+  const { currency, getToken, user } = useAppContext();
 
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
